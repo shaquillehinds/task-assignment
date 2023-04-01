@@ -35,7 +35,7 @@ export default function TaskForm({
       <div className={"flex flex-col mb-2"}>
         <input
           type={"text"}
-          className={"mb-2"}
+          className={"mb-2 border-b-2 outline-none"}
           value={title}
           onChange={handleTitleChange}
           placeholder="Title"
@@ -44,6 +44,7 @@ export default function TaskForm({
           value={description}
           onChange={handleDescriptionChange}
           placeholder="Description"
+          className={"border-b-2 outline-none"}
         />
       </div>
       <div className={"flex justify-between mx-auto w-48"}>
