@@ -4,9 +4,9 @@
   "description": "Basic task manager api",
   "main": "dist/index.js",
   "scripts": {
-    "test": "env NODE_ENV=test jest --runInBand --detectOpenHandles --ci",
-    "dev": "env NODE_ENV=dev nodemon src/index.ts -L",
-    "prod": "env NODE_ENV=prod nodemon src/index.ts -L",
+    "test": "jest --runInBand --detectOpenHandles --ci",
+    "dev": "nodemon src/index.ts -L",
+    "prod": "nodemon src/index.ts -L",
     "build": "tsc -p ./",
     "start": "node dist/"
   },
